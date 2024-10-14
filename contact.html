@@ -1,0 +1,215 @@
+<?php
+include("loader.php");  
+error_reporting(0);  
+session_start(); 
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="images" href="images/companion.jpg">
+        <link rel="stylesheet" href='style.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <meta name="google-site-verification" content="yfQ3ov64FZLVSxfZpuu8qOJX8x7HODc8t3eSya4xoVw" />
+         <!-- *******  Owl Carousel Links  ******* -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+</head>
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+<script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+
+<body>
+   
+    <header>
+        <!-- header start -->
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><h1>SKILLS<span>Beyond</span> </h1></div>
+            <ul>
+                <li><a href="expert.html" style="--i:1" class="active" >Experts</a></li>
+                <li><a href="#" style="--i:1" class="active" >Business</a></li>
+                <li><a href="#" style="--i:1" class="active" >University</a></li>
+                <li><a href="expert.html#expert" style="--i:1" class="active" >Become Interviewer</a></li>
+                <li><a href="contact.html" style="--i:1" class="active" >Contact Us</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                      
+                </li>
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+    <!-- header ends -->
+   <section class="contact-form">
+    <h1 class="heading">Get In Touch!</h1>
+    <p class="para">we have 24/7 hours support service, helping our customers with their needs.
+        fill in the form to get to us,thank you!.</p>
+    
+    <div class="contactForm">
+         <form id="contact-form" action="#" method="POST" class="max-w-lg mx-auto">
+            <h1 class="text-3xl font-bold mb-4">Contact Us</h1>
+            <div class="mb-4">
+                <input type="text" id="name" name="name" placeholder="Your Name"
+                    class="input">
+            </div>
+            <div class="mb-4">
+                <input type="email" id="email" name="email" placeholder="Your email"
+                    class="input">
+            </div>
+            <div class="mb-4">
+                <textarea id="message" name="message" rows="5" placeholder="type message..."
+                    class="input area"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                    class="input submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="map-container">
+            <div class="mapBg"></div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2042784.904086713!2d34.590016840642384!3d-0.081683130217426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d1.1191801!2d35.0386318!4m5!1s0x182f10d429319893%3A0x9642728b9e83fcb2!2sNanak%20House%202nd%20Floor%20Kimathi%20St%20Nairobi!3m2!1d-1.2832991!2d36.821881999999995!5e0!3m2!1sen!2ske!4v1728820153007!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+   
+   </section>
+   
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+ </script>
+
+ <script>
+
+    emailjs.init("VLHn3iVgZ5vu8P-wE");
+
+    function sendEmail(event){
+
+        event.preventDefault();
+
+        const name=document.getElementById("name").value;
+        const email=document.getElementById("email").value;
+        const message=document.getElementById("message").value;
+
+        if(!name || !email || !message){
+            alert("Please fill in all fields");
+            return;
+        }
+        emailjs.send("service_qqwj4d8", "template_3uoz8x8",{
+            from_name:name,
+            from_email:email,
+            message:message,
+        })
+        .then(function(response){
+            alert("Your Message Was Sent Successfully!");
+            document.getElementById("contact-form").reset();
+        }, function(error){
+            alert("Oops! Something Went Wrong")
+        });
+    }
+
+    document.getElementById("contact-form").addEventListener("submit", sendEmail);
+ </script>
+
+<footer>
+    <div class="container">
+        <div class="footer-col">
+            <div class="logo"><h1>SKILLS<span>Beyond</span> </h1></div><br>
+            <p class="footer-para">Elevate Your Interview Performance and Land Your Dream Tech Job 
+            </p>
+        </div>
+        
+        <div class="footer-col">
+            <h3 class="text-office">
+                Office
+                <div class="underline"><span></span></div>
+            </h3>
+            <p>Nanak House</p>
+            <p>2nd Floor Kimathi St</p>
+            <p>Nairobi</p>
+            <br>
+            <h3 class="text-office">
+                Support
+                <div class="underline"><span></span></div><br>
+            </h3>
+            <p class="phone">+254738172999</p>
+            <p class="email">support@skillsbeyond.io</p>
+        </div>
+        <div class="footer-col">
+            <h3>
+                Quick Links
+                <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="Benefit.html">Benefits</a></li>
+                <li><a href="pricing.html">pricing</a></li>
+                <li><a href="#">Book Us</a></li>
+            </ul>
+            
+            
+        </div>
+        <div class="footer-col">
+            <h3>
+                Newsletter
+                <div class="underline"><span></span></div>
+            </h3>
+            <form action="">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Enter Company Email">
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            </div>
+            <br>
+            <h3>
+                Solutions
+                <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+                <li><a href="index.html">For Business</a></li>
+                <li><a href="Benefit.html">For University</a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</footer>
+        
+        <a href="contact.html" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+        <script src="script.js"></script>
+
+</body>
+</html>
